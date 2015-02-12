@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Fraction.hxx</itemPath>
+      <itemPath>Fraction.inl</itemPath>
+      <itemPath>Polynomial.hxx</itemPath>
+      <itemPath>Polynomial.inl</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>newmain.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FractionCalc</output>
+        </linkerTool>
+      </compileType>
+      <item path="Fraction.hxx" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fraction.inl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Polynomial.hxx" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Polynomial.inl" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="HeaderFiles">
+        <ccTool>
+          <incFile>
+            <pElem>Fraction.hxx</pElem>
+            <pElem>Fraction.inl</pElem>
+            <pElem>Polynomial.hxx</pElem>
+            <pElem>Polynomial.inl</pElem>
+          </incFile>
+        </ccTool>
+      </folder>
+      <item path="newmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </compileType>
+      <item path="Fraction.hxx" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fraction.inl" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Polynomial.hxx" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Polynomial.inl" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="newmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
